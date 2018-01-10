@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Docgram Dashboard</title>
+  <!-- Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark dark-bg fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo-v2.png">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Components</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="#">Navbar</a>
+            </li>
+            <li>
+              <a href="#">Cards</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="#">Login Page</a>
+            </li>
+            <li>
+              <a href="#">Registration Page</a>
+            </li>
+            <li>
+              <a href="#">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="#">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">New Messages:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>David Miller</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>Jane Smith</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>John Doe</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              12
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <img src="img/img.png">
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <a href="#" class="home">Dashboard</a>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Dashboard</li>
+      </ol>
+
+      <!-- Maps -->
+      <div class="wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251170.19455870852!2d123.70620446826736!3d10.37907184090098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu+City%2C+Cebu!5e0!3m2!1sen!2sph!4v1512732560605" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+      <!-- Forms -->
+      <form action="#" class="search-form">
+        <div class="row">
+          <div class="col-lg-3">
+            <p>Search radius</p>
+            <span>
+              <input type="radio" id="test1" name="radio-group" checked>
+              <label for="test1">Apple</label>
+            </span>
+            <span>
+              <input type="radio" id="test2" name="radio-group" checked>
+              <label for="test2">Apple</label>
+            </span>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Years in practice</p>
+              </div>
+              <div class="col-lg-6">
+                <input type="text" name="" class="form-control">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" name="" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Years in practice</p>
+              </div>
+              <div class="col-lg-6">
+                <select class="form-control">
+                  <option>test</option>
+                  <option>test</option>
+                  <option>test</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <button class="btn btn-primary btn-search" type="button">
+                  Save Search Settings
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <!-- Buttons-->
+      <div class="row">
+        <div class="col-md-12 btn-panels">
+          <button class="btn btn-primary btn-actions btn-left btn-addmap" type="button"><i class="fa fa-map-o" aria-hidden="true"></i> Add To Map</button>
+          <button class="btn btn-actions btn-left btn-load" type="button"><i class="fa fa-search" aria-hidden="true"></i> Load Search Settings</button>
+          <button class="btn btn-actions btn-left btn-excel" type="button"><i class="fa fa-file-excel-o"></i>  Export to CSV</button>
+          <button class="btn btn-actions btn-left btn-mail" type="button"><i class="fa fa-envelope-o"></i> Add To Mailing List</button>
+          <div class="btn-group btn-right">
+            <button type="button" class="btn">Select Hospital</button>
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu select-options">
+              <li>
+                <input id="MainContent_chkselectallaffils" type="checkbox" name="ctl00$MainContent$chkselectallaffils">
+                <label for="MainContent_chkselectallaffils">Select All</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_0" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$0" value="AROOSTOOK MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_0">AROOSTOOK MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_1" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$1" value="BELLEVUE HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_1">BELLEVUE HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_2" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$2" value="BERGEN REGIONAL MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_2">BERGEN REGIONAL MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_3" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$3" value="BETH ISRAEL DEACONESS MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_3">BETH ISRAEL DEACONESS MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_4" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$4" value="BETH ISRAEL MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_4">BETH ISRAEL MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_5" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$5" value="BRIGHAM AND WOMEN'S HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_5">BRIGHAM AND WOMEN'S HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_6" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$6" value="BRONX-LEBANON HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_6">BRONX-LEBANON HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_7" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$7" value="BROOKDALE HOSPITAL MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_7">BROOKDALE HOSPITAL MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_8" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$8" value="BROOKLYN HOSPITAL CENTER AT DOWNTOWN CAMPUS">
+                <label for="MainContent_checkboxlistAffils_8">BROOKLYN HOSPITAL CENTER AT DOWNTOWN CAMPUS</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_9" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$9" value="CARY MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_9">CARY MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_10" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$10" value="CITY OF HOPE HELFORD CLINICAL RESEARCH HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_10">CITY OF HOPE HELFORD CLINICAL RESEARCH HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_11" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$11" value="ELMHURST HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_11">ELMHURST HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_12" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$12" value="ENGLEWOOD HOSPITAL AND MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_12">ENGLEWOOD HOSPITAL AND MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_13" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$13" value="HACKENSACK UNIVERSITY MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_13">HACKENSACK UNIVERSITY MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_14" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$14" value="HOLY NAME MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_14">HOLY NAME MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_16" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$16" value="JACOBI MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_16">JACOBI MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_17" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$17" value="JAMAICA HOSPITAL MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_17">JAMAICA HOSPITAL MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_18" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$18" value="KAISER FOUNDATION HOSPITAL - SAN DIEGO">
+                <label for="MainContent_checkboxlistAffils_18">KAISER FOUNDATION HOSPITAL - SAN DIEGO</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_19" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$19" value="KECK HOSPITAL OF USC">
+                <label for="MainContent_checkboxlistAffils_19">KECK HOSPITAL OF USC</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_20" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$20" value="KINGS COUNTY HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_20">KINGS COUNTY HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_21" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$21" value="LAC+USC MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_21">LAC+USC MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_22" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$22" value="LINCOLN MEDICAL &amp; MENTAL HEALTH CENTER">
+                <label for="MainContent_checkboxlistAffils_22">LINCOLN MEDICAL &amp; MENTAL HEALTH CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_23" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$23" value="LONG ISLAND JEWISH MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_23">LONG ISLAND JEWISH MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_24" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$24" value="MAIMONIDES MEDICAL CENTER"><label for="MainContent_checkboxlistAffils_24">MAIMONIDES MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_25" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$25" value="MASSACHUSETTS GENERAL HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_25">MASSACHUSETTS GENERAL HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_26" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$26" value="MEMORIAL HOSPITAL FOR CANCER AND ALLIED DISEASES">
+                <label for="MainContent_checkboxlistAffils_26">MEMORIAL HOSPITAL FOR CANCER AND ALLIED DISEASES</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_27" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$27" value="METROPOLITAN HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_27">METROPOLITAN HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_28" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$28" value="MONTEFIORE MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_28">MONTEFIORE MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_29" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$29" value="MOUNT SINAI HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_29">MOUNT SINAI HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_30" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$30" value="NEW YORK METHODIST HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_30"> NEW YORK METHODIST HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_31" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$31" value="NEW YORK-PRESBYTERIAN HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_31"> NEW YORK-PRESBYTERIAN HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_32" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$32" value="NORTH SHORE UNIVERSITY HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_32"> NORTH SHORE UNIVERSITY HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_33" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$33" value="NORTHERN MAINE MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_33"> NORTHERN MAINE MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_34" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$34" value="NORTHWESTERN MEMORIAL HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_34"> NORTHWESTERN MEMORIAL HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_35" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$35" value="NOVATO COMMUNITY HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_35">NOVATO COMMUNITY HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_36" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$36" value="NYU HOSPITALS CENTER">
+                <label for="MainContent_checkboxlistAffils_36">NYU HOSPITALS CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_37" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$37" value="QUEENS HOSPITAL CENTER">
+                <label for="MainContent_checkboxlistAffils_37">QUEENS HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_38" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$38" value="ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_38">ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_39" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$39" value="RONALD REAGAN U C L A MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_39">RONALD REAGAN U C L A MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_40" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$40" value="SANTA MONICA - UCLA MED CTR &amp; ORTHOPAEDIC HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_40">SANTA MONICA - UCLA MED CTR &amp; ORTHOPAEDIC HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_41" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$41" value="ST JOSEPH MERCY HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_41">ST JOSEPH MERCY HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_42" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$42" value="ST JOSEPH'S REGIONAL MEDICAL CENTER">
+                <label for="MainContent_checkboxlistAffils_42">ST JOSEPH'S REGIONAL MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_43" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$43" value="ST LUKE'S ROOSEVELT HOSPITAL">
+                <label for="MainContent_checkboxlistAffils_43">ST LUKE'S ROOSEVELT HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_44" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$44" value="UNIVERSITY HOSPITAL OF BROOKLYN ( DOWNSTATE )"><label for="MainContent_checkboxlistAffils_44">UNIVERSITY HOSPITAL OF BROOKLYN ( DOWNSTATE )</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_45" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$45" value="UNIVERSITY MEDICAL CENTER"><label for="MainContent_checkboxlistAffils_45">UNIVERSITY MEDICAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_46" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$46" value="WHITE PLAINS HOSPITAL CENTER"><label for="MainContent_checkboxlistAffils_46">WHITE PLAINS HOSPITAL CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_47" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$47" value="WINTHROP-UNIVERSITY HOSPITAL"><label for="MainContent_checkboxlistAffils_47">WINTHROP-UNIVERSITY HOSPITAL</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_48" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$48" value="WOODHULL MEDICAL AND MENTAL HEALTH CENTER"><label for="MainContent_checkboxlistAffils_48">WOODHULL MEDICAL AND MENTAL HEALTH CENTER</label>
+              </li>
+              <li>
+                <input id="MainContent_checkboxlistAffils_49" type="checkbox" name="ctl00$MainContent$checkboxlistAffils$49" value="WYCKOFF HEIGHTS MEDICAL CENTER"><label for="MainContent_checkboxlistAffils_49">WYCKOFF HEIGHTS MEDICAL CENTER</label>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Badge-->
+      <div class="row">
+        <div class="col-md-12 badge-panel">
+          <a href="#"><span class="badge">461</span> SELECTED PHYSICIANS </a>
+        </div>
+      </div>
+
+      <div class="table-responsive"> 
+        <table class="table table-bordered table-striped"> 
+          <colgroup> <col class="col-xs-1"> <col class="col-xs-7"> </colgroup> 
+          <thead> 
+            <tr> 
+              <th class="checkbox-wrapper">
+                <div class="round">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox"></label>
+                </div>
+              </th> 
+              <th>Experise</th> 
+              <th>Doctor's Name</th> 
+              <th>Clinic Address</th> 
+              <th>Email Address</th> 
+              <th>Phone Number</th> 
+              <th>Actions</th> 
+            </tr> 
+          </thead> 
+          <tbody> 
+            <tr> 
+              <th class="checkbox-wrapper"> 
+                <div class="round">
+                  <input type="checkbox" id="checkbox1" />
+                  <label for="checkbox1"></label>
+                </div>
+              </th> 
+              <td><div class="expertise">General Dermatology</div></td> 
+              <td>ELIZABETH KONECKY, MD</td> 
+              <td>424 W END AVE 8F 10024</td> 
+              <td>elizabeth.konecky@gmail.com</td> 
+              <td>123-456-789</td> 
+              <td class="btn-action-wrapper">
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn">Action</button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </td> 
+            </tr> 
+            <tr> 
+              <th class="checkbox-wrapper"> 
+                <div class="round">
+                  <input type="checkbox" id="checkbox2" />
+                  <label for="checkbox2"></label>
+                </div>
+              </th> 
+              <td><div class="expertise">General Dermatology</div></td> 
+              <td>ELIZABETH KONECKY, MD</td> 
+              <td>424 W END AVE 8F 10024</td> 
+              <td>elizabeth.konecky@gmail.com</td> 
+              <td>123-456-789</td> 
+              <td class="btn-action-wrapper">
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn">Action</button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </td> 
+            </tr> 
+          </tbody> 
+        </table> 
+      </div>
+
+      <!-- Export Button-->
+      <div class="row">
+        <div class="col-md-12 btn-panels">
+          <button class="btn btn-actions btn-right" type="button"><i class="fa fa-fw fa-file"></i> Export List</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+</body>
+
+</html>

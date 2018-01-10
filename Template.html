@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Docgram Dashboard</title>
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/newstyle.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark dark-bg fixed-top" id="mainNav">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-v2.png">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa fa-fw fa-dashboard"></i>
+                            <span class="nav-link-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-fw fa-area-chart"></i>
+                            <span class="nav-link-text">Charts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-fw fa-table"></i>
+                            <span class="nav-link-text">Tables</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                            <i class="fa fa-fw fa-wrench"></i>
+                            <span class="nav-link-text">Components</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                                <a href="#">Navbar</a>
+                            </li>
+                            <li>
+                                <a href="#">Cards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                            <i class="fa fa-fw fa-file"></i>
+                            <span class="nav-link-text">Example Pages</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                            <li>
+                                <a href="#">Login Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Registration Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Forgot Password Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Blank Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                            <i class="fa fa-fw fa-sitemap"></i>
+                            <span class="nav-link-text">Menu Levels</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseMulti">
+                            <li>
+                                <a href="#">Second Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Item</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+                                <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-fw fa-link"></i>
+                            <span class="nav-link-text">Link</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span class="d-lg-none">Messages
+
+                            <span class="badge badge-pill badge-primary">12 New</span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                            <h6 class="dropdown-header">New Messages:</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <strong>David Miller</strong>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <strong>Jane Smith</strong>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <strong>John Doe</strong>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item small" href="#">View all messages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-fw fa-bell"></i>
+                            <span class="d-lg-none">Alerts
+
+                            <span class="badge badge-pill badge-warning">6 New</span>
+                            </span>
+                            <span class="indicator text-warning d-none d-lg-block">12</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">New Alerts:</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                            </span>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <span class="text-danger">
+                                <strong>
+                                    <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                            </span>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                            </span>
+                                <span class="small float-right text-muted">11:21 AM</span>
+                                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item small" href="#">View all alerts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2" id="useraccount" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/img.png">
+                        </a>
+                        <div class="dropdown-menu user-settings" aria-labelledby="useraccount">
+                            <div class="media">
+                                <div class="arrow"></div>
+                                
+                                <div class="media-body">
+                                <p>Edgar Amancio <br/><small>edgar.amancio@gmail.com</small></p>
+                                <button class="btn btn-primary btn-addmap ">Account Settings</button>
+                                <hr/>
+                                <button class="btn btn-signout">Sign out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="container-fluid">
+
+                <!-- Breadcrumbs-->
+                <a href="#" class="home">Dashboard</a>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+                
+
+                <section class="main-wrapper">
+                    <div class="col-md-12" >
+                    </div>
+
+                </section>
+
+                <div class="container">
+                    <div class="wrapper stepwrapper">
+                        <h1 class="text-center display-3">3 Simple Steps to Send Docgram</h1>
+                      <ul class="steps">
+                        <li class="is-active">
+                            <h3 class="lead">Step 1</h3>
+                        </li>
+                        <li>
+                            <h3 class="lead">Step 2</h3>
+                        </li>
+                        <li>
+                            <h3 class="lead">Step 3</h3>
+                        </li>
+                      </ul>
+                      <!-- Steps Panel Form -->
+                      <form class="form-wrapper">
+                        <!-- Step 1 -->
+                        <fieldset class="section is-active">
+                            <hr>
+                            <div class="form-head">
+                                <h3>Design Your Letter</h3>
+                            </div>
+
+                            <div class="clearfix">
+                                <a  role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <div class="collapse" id="collapseExample"><br/>
+                                  <div class="well">
+                                    <p><b>Creating Templates</b></p>
+                                    <p>We currently accept any version of <highlight>Microsoft Word</highlight> documents. Simply upload your letter below. Use the placeholders <highlight>{firstname}</highlight> and <highlight>{lastname}</highlight> to customize. Check out a sample here.</p>
+                                    <p>All pages of a supplied document must be sized at <highlight>8.5"x11"</highlight>.</p>
+                                    <p>The file limit is <highlight>60</highlight> pages single-sided or <highlight>120</highlight> pages double-sided.</p>
+                                    <p>Several additional options including color, double-sided printing, and address placement are available prior to mailing.</p>
+                                  </div>
+                                </div>
+                            </div><br/>
+                            <div class="zone">
+                              <div id="dropZ">
+                                <i class="fa fa-cloud-upload"></i>
+                                <div>Drag and drop your file here</div>                    
+                                <span>OR</span>
+                                <div class="selectFile">       
+                                  <label for="file">Select file</label>                   
+                                  <input type="file" name="files[]" id="file">
+                                </div>
+                                <p>Upload your .doc or docx file</p>
+                              </div>
+                            </div>
+                            <div class="dropzone">
+                                <div class="doc-wrapper">
+                                    <img src="img/word.png">
+                                    <a href="#">Sample.docx</a>
+                                </div>
+                                <div class="doc-wrapper">
+                                    <img src="img/word.png">
+                                    <a href="#">Sample.docx</a>
+                                </div>
+                                <div class="doc-wrapper">
+                                    <img src="img/word.png">
+                                    <a href="#">Sample.docx</a>
+                                </div>
+                            </div>
+                        <div class="button">Next</div>
+                        </fieldset>
+
+                        <!-- Step 2 -->
+                        <fieldset class="section">
+                            <hr>
+                            <div class="form-head">
+                                <h3>Finalize Your Mailing List</h3>
+                            </div>
+                          
+                            <!-- Buttons-->
+                            <div class="row">
+                                <div class="col-md-12 btn-panels">
+                                    <button class="btn btn-primary btn-actions btn-left btn-addmap" type="button" ><i class="fa fa-map-o" aria-hidden="true"></i> Add A Physician</button>
+                                    <button class="btn btn-primary btn-actions btn-left btn-mail" type="button" ><i class="fa fa-map-o" aria-hidden="true"></i> Remove Selected Physicians</button>
+                                    <button class="btn btn-actions btn-right" type="button" OnClick="$('#myModal').modal();"><i class="fa fa-fw fa-file"></i> Send Docgram!</button>
+                                </div>
+                            </div>
+                            <!-- Guidelines -->
+                            <div class="clearfix">
+                                <a  role="button" data-toggle="collapse" href="#collapseguide" aria-expanded="false" aria-controls="collapseguide">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <div class="collapse" id="collapseguide"><br/>
+                                  <div class="well">
+                                    <p><b>Creating New Mailing Lists</b></p>
+                                    <p>Create new mailing lists through the <a href="#">Dashboard</a></p>
+                                    <p>Once a list is created, you can add and remove individual recipients here</p>
+                                  </div>
+                                </div>
+                            </div><br/>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="checkbox-wrapper">
+                                                <input id="" type="checkbox"/>
+                                            </th>
+                                            <th>Email</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="checkbox-wrapper">
+                                                <input id="" type="checkbox"/>
+                                            </td>
+                                            <td>edgar.amancio@gmail.com</td>
+                                            <td>Edgar</td>
+                                            <td>Amancio</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox-wrapper">
+                                                <input id="" type="checkbox"/>
+                                            </td>
+                                            <td>edgar.amancio@gmail.com</td>
+                                            <td>Edgar</td>
+                                            <td>Amancio</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox-wrapper">
+                                                <input id="" type="checkbox"/>
+                                            </td>
+                                            <td>edgar.amancio@gmail.com</td>
+                                            <td>Edgar</td>
+                                            <td>Amancio</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox-wrapper">
+                                                <input id="" type="checkbox"/>
+                                            </td>
+                                            <td>edgar.amancio@gmail.com</td>
+                                            <td>Edgar</td>
+                                            <td>Amancio</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Badge-->
+                            <div class="row">
+                                <div class="col-md-12 badge-panel numphysician">
+                                    <span class="badge" style="width:55px; float: left;">254</span>
+                                    <span class="badgetxt">Selected Physicians</span> 
+                                    <div class="button">Next</div>
+                                </div>
+                            </div>
+                          
+                        </fieldset>
+
+                        <!-- Step 3 -->
+                        <fieldset class="section">
+                            <hr>
+                            <div class="form-head">
+                                <h3>Choose Your Template and Mailing List</h3>
+                            </div>
+                            <div class="row preview-wrapper">
+                                <div class="form-group col-md-6">
+                                <label for="exampleInputEmail1"><b>Email address</b></label>
+                                <select class="form-control">
+                                    <option>Template 01</option>
+                                    <option>Template 02</option>
+                                    <option>Template 03</option>
+                                    <option>Template 04</option>
+                                    <option>Template 05</option>
+                                </select><br/>
+
+                                <label for="exampleInputEmail1"><b>Email address</b></label>
+                                <select class="form-control">
+                                    <option>Template 01</option>
+                                    <option>Template 02</option>
+                                    <option>Template 03</option>
+                                    <option>Template 04</option>
+                                    <option>Template 05</option>
+                                </select><br/>
+
+                                <p><b>Mail Options</b></p>
+                                    <span><input type="checkbox">&nbsp; Color</span>&nbsp;&nbsp;
+                                    <span><input type="checkbox">&nbsp; Double-Sided</span>&nbsp;&nbsp;
+                                    <span><input type="checkbox">&nbsp; Blank Page</span><br/><br/>
+                                <p class="btn-preview"><button class="btn btn-primary btn-actions btn-left btn-addmap" type="button"><i class="fa fa-spinner" aria-hidden="true"></i> Generate Preview</button></p>
+                              </div>
+
+                                <div class="col-md-6">
+                                    <p><b>Mail Review</b></p>
+                                    <div class="preview-panel">
+                                        <a href="http://www.docgram.com/previewloader" target="_blank">Open Preview</a>
+                                        <iframe src="http://www.docgram.com/previewloader" height="202"></iframe>
+                                    </div>
+                                    <input type="checkbox">&nbsp; I have reviewed the above preview and understand the terms and conditions.
+                                </div>
+                            </div>
+                            <div class="button">Proceed Payment Options</div>
+                        </fieldset>
+                        <fieldset class="payment-section section ">
+                            <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered summary-table">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Order Summary</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>First B&W Page</td>
+                                                    <td>1 @ $1.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>+Additional B&W Pages</td>
+                                                    <td>1 @ $0.10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cost Per Letter</td>
+                                                    <td>$1.65</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>x Number of Recipients</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total Cost </td>
+                                                    <td>$</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><br/>
+                                    <div class="media">
+                                      <div class="media-left">
+                                        <a href="#">
+                                          <img class="media-object img-responsive" src="https://www.buyrealmarketing.com/assets/images/s5-co-100-guarantee.png" alt="...">
+                                        </a>
+                                      </div>
+                                      <div class="media-body">
+                                        <h6 class="media-heading">100% Money Back Guarantee</h6 >
+                                        We offer a 60-day period for refunds. Learn more about order cancellations and refunds in our Refund Policy page.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" >
+                                    <div class="forms clearfix">
+                                        <form>
+                                            <div class="row">
+                                              <div class="col-sm-12">
+                                                <label >Card Number</label>
+                                                <input type="text" class="form-control" placeholder="Credit Card Number">
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-6 pdr">
+                                                <label >Expiration Date</label>
+                                                <input type="text" class="form-control" placeholder="MM/YYYY">
+                                              </div>
+                                              <div class="col-sm-6 pdl">
+                                                <label >CV CODE</label>
+                                                <input type="text" class="form-control" placeholder="CVC">
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-6 pdr">
+                                                <label >First Name</label>
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                              </div>
+                                              <div class="col-sm-6 pdl">
+                                                <label >Last  Name</label>
+                                                <input type="text" class="form-control" placeholder="Last  Name">
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-12">
+                                                <label >Address</label>
+                                                <input type="text" class="form-control" placeholder="Full Address">
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-4 pdr">
+                                                <label >City</label>
+                                                <input type="text" class="form-control" placeholder="City">
+                                              </div>
+                                              <div class="col-sm-4 pdr pdl">
+                                                <label >State</label>
+                                                <input type="text" class="form-control" placeholder="State">
+                                              </div>
+                                              <div class="col-sm-4 pdl">
+                                                <label >Zip Code</label>
+                                                <input type="text" class="form-control" placeholder="Zip Code">
+                                              </div>
+                                            </div>
+                                            <input type="checkbox">&nbsp; Save Payment Method?
+                                            <div class="button">Send DocGram!</div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!-- Thank you -->
+                        <fieldset class="section">
+                            <div class="text-center">
+                              <h1 class="display-3">Thank You!</h1>
+                              <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
+                              <hr>
+                              <p>
+                                Having trouble? <a href="">Contact us</a>
+                              </p>
+                              <p class="lead">
+                                <a class="btn btn-primary btn-sm" href="" role="button">Back to Dashboard</a>
+                              </p>
+                            </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+
+
+
+                
+            </div><!-- /.container-fluid-->
+        </div> <!-- /.content-wrapper-->
+
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright © Your Website 2017</small>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin.min.js"></script>
+        <!-- Custom scripts for this page-->
+        <script src="js/sb-admin-datatables.min.js"></script>
+        <script src="js/sb-admin-charts.min.js"></script>
+
+        <script src="js/waitingDialog.js"></script>
+
+        <!-- Visual Studio Browser Link -->
+        <script type="application/json" id="__browserLink_initializationData">
+            {"appName":"Chrome","requestId":"8b35a37c831e4818a9e30f951bd56b1f"}
+        </script>
+        <script type="text/javascript" src="http://localhost:53746/b642f7b5ec2d43cab79d8e0c3f2d4824/browserLink" async="async"></script>
+        <!-- End Browser Link -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $(".form-wrapper .button").click(function(){
+                var button = $(this);
+                var currentSection = button.parents(".section");
+                var currentSectionIndex = currentSection.index();
+                var headerSection = $('.steps li').eq(currentSectionIndex);
+                currentSection.removeClass("is-active").next().addClass("is-active");
+                headerSection.removeClass("is-active").next().addClass("is-active");
+
+                $(".form-wrapper").submit(function(e) {
+                  e.preventDefault();
+                });
+
+                if(currentSectionIndex === 4){
+                  $(document).find(".form-wrapper .section").first().addClass("is-active");
+                  $(document).find(".steps li").first().addClass("is-active");
+                }
+              });
+            });
+        </script>
+
+    </body>
+
+</html>
