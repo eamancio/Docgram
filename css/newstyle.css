@@ -754,7 +754,8 @@ fieldset{
 }
 
 .form-wrapper input[type="text"],
-.form-wrapper input[type="password"]{
+.form-wrapper input[type="password"],
+.form-wrapper select.form-control{
   display: block;
   padding: 10px;
   margin: 10px auto;
@@ -764,6 +765,7 @@ fieldset{
   outline: none;
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
+  height: 33px !important;
 }
 
 .form-wrapper input[type="radio"]{
