@@ -222,181 +222,198 @@
 
         <div class="content-wrapper">
             <div class="container-fluid">
-
-                <!-- Breadcrumbs-->
-                <a href="#" class="home">Dashboard</a>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                <div class="wrapper stepwrapper">
+                    <h1 class="text-center display-3 heading">3 Simple Steps to Send <b>Doc</b>gram</h1>
+                  <ul class="steps">
+                    <li class="is-active">
+                        <h3 class="lead">Step 1</h3>
+                        <p>Design Your Letter</p>
                     </li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
-                
+                    <li>
+                        <h3 class="lead">Step 2</h3>
+                        <p>Finalize Your Mailing List</p>
+                    </li>
+                    <li>
+                        <h3 class="lead">Step 3</h3>
+                        <p>Choose Template and List</p>
+                    </li>
+                  </ul>
+                  <!-- Steps Panel Form -->
+                  <div class="form-wrapper">
+                    <!-- Step 1 -->
+                    <fieldset class="section is-active">
 
-                <section class="main-wrapper">
-                    <div class="col-md-12" >
-                    </div>
-
-                </section>
-
-                <div class="container">
-                    <div class="wrapper stepwrapper">
-                        <h1 class="text-center display-3">3 Simple Steps to Send Docgram</h1>
-                      <ul class="steps">
-                        <li class="is-active">
-                            <h3 class="lead">Step 1</h3>
-                        </li>
-                        <li>
-                            <h3 class="lead">Step 2</h3>
-                        </li>
-                        <li>
-                            <h3 class="lead">Step 3</h3>
-                        </li>
-                      </ul>
-                      <!-- Steps Panel Form -->
-                      <form class="form-wrapper">
-                        <!-- Step 1 -->
-                        <fieldset class="section is-active">
-                            <hr>
-                            <div class="form-head">
-                                <h3>Design Your Letter</h3>
-                            </div>
-
-                            <div class="clearfix">
-                                <a  role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                <div class="collapse" id="collapseExample"><br/>
-                                  <div class="well">
-                                    <p><b>Creating Templates</b></p>
-                                    <p>We currently accept any version of <highlight>Microsoft Word</highlight> documents. Simply upload your letter below. Use the placeholders <highlight>{firstname}</highlight> and <highlight>{lastname}</highlight> to customize. Check out a sample here.</p>
-                                    <p>All pages of a supplied document must be sized at <highlight>8.5"x11"</highlight>.</p>
-                                    <p>The file limit is <highlight>60</highlight> pages single-sided or <highlight>120</highlight> pages double-sided.</p>
-                                    <p>Several additional options including color, double-sided printing, and address placement are available prior to mailing.</p>
-                                  </div>
-                                </div>
-                            </div><br/>
-                            <div class="zone">
-                              <div id="dropZ">
-                                <i class="fa fa-cloud-upload"></i>
-                                <div>Drag and drop your file here</div>                    
-                                <span>OR</span>
-                                <div class="selectFile">       
-                                  <label for="file">Select file</label>                   
-                                  <input type="file" name="files[]" id="file">
-                                </div>
-                                <p>Upload your .doc or docx file</p>
+                        <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
+                        <div class="clearfix">
+                            <a  role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            <div class="collapse" id="collapseExample"><br/>
+                              <div class="well">
+                                <p><b>Creating Templates</b></p>
+                                <p>We currently accept any version of <highlight>Microsoft Word</highlight> documents. Simply upload your letter below. Use the placeholders <highlight>{firstname}</highlight> and <highlight>{lastname}</highlight> to customize. Check out a sample here.</p>
+                                <p>All pages of a supplied document must be sized at <highlight>8.5"x11"</highlight>.</p>
+                                <p>The file limit is <highlight>60</highlight> pages single-sided or <highlight>120</highlight> pages double-sided.</p>
+                                <p>Several additional options including color, double-sided printing, and address placement are available prior to mailing.</p>
                               </div>
                             </div>
-                            <div class="dropzone">
-                                <div class="doc-wrapper">
-                                    <img src="img/word.png">
-                                    <a href="#">Sample.docx</a>
-                                </div>
-                                <div class="doc-wrapper">
-                                    <img src="img/word.png">
-                                    <a href="#">Sample.docx</a>
-                                </div>
-                                <div class="doc-wrapper">
-                                    <img src="img/word.png">
-                                    <a href="#">Sample.docx</a>
-                                </div>
+                        </div><br/>
+                        <div class="zone">
+                          <div id="dropZ">
+                            <i class="fa fa-cloud-upload"></i>
+                            <div>Drag and drop your file here</div>                    
+                            <span>OR</span>
+                            <div class="selectFile">       
+                              <label for="file">Select file</label>                   
+                              <input type="file" name="files[]" id="file">
                             </div>
-                        <div class="button">Next</div>
-                        </fieldset>
+                            <p>Upload your .doc or docx file</p>
+                          </div>
+                        </div>
+                        <div class="dropzone">
+                            <div class="doc-wrapper">
+                                <img src="img/word.png">
+                                <a href="#">Sample.docx</a>
+                            </div>
+                            <div class="doc-wrapper">
+                                <img src="img/word.png">
+                                <a href="#">Sample.docx</a>
+                            </div>
+                            <div class="doc-wrapper">
+                                <img src="img/word.png">
+                                <a href="#">Sample.docx</a>
+                            </div>
+                        </div>
+                    <div class="button">Next</div>
+                    </fieldset>
 
-                        <!-- Step 2 -->
-                        <fieldset class="section">
-                            <hr>
-                            <div class="form-head">
-                                <h3>Finalize Your Mailing List</h3>
-                            </div>
-                          
-                            <!-- Buttons-->
+                    <!-- Step 2 -->
+                    <fieldset class="section">
+                      
+                        <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
+                        <!-- Guidelines -->
+                        <div class="clearfix">
+                            
                             <div class="row">
-                                <div class="col-md-12 btn-panels">
-                                    <button class="btn btn-primary btn-actions btn-left btn-addmap" type="button" ><i class="fa fa-map-o" aria-hidden="true"></i> Add A Physician</button>
-                                    <button class="btn btn-primary btn-actions btn-left btn-mail" type="button" ><i class="fa fa-map-o" aria-hidden="true"></i> Remove Selected Physicians</button>
-                                    <button class="btn btn-actions btn-right" type="button" OnClick="$('#myModal').modal();"><i class="fa fa-fw fa-file"></i> Send Docgram!</button>
+                                <div class="col-md-6">
+                                    <a class="text-left" role="button" data-toggle="collapse" href="#collapseguide" aria-expanded="false" aria-controls="collapseguide">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-control">
+                                        <option>Filter By:</option>
+                                        <option>Date</option>
+                                        <option>Position</option>
+                                        <option>Email</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-control text-right">
+                                        <option>Select Email List</option>
+                                        <option>Email List 01</option>
+                                        <option>Email List 02</option>
+                                        <option>Email List 03</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary btn-actions btn-right btn-addmap" type="button" data-toggle="modal" data-target="#AddPhysician"><i class="fa fa-map-o" aria-hidden="true"></i> Add A Physician</button>
                                 </div>
                             </div>
-                            <!-- Guidelines -->
-                            <div class="clearfix">
-                                <a  role="button" data-toggle="collapse" href="#collapseguide" aria-expanded="false" aria-controls="collapseguide">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                <div class="collapse" id="collapseguide"><br/>
-                                  <div class="well">
-                                    <p><b>Creating New Mailing Lists</b></p>
-                                    <p>Create new mailing lists through the <a href="#">Dashboard</a></p>
-                                    <p>Once a list is created, you can add and remove individual recipients here</p>
-                                  </div>
-                                </div>
-                            </div><br/>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th class="checkbox-wrapper">
-                                                <input id="" type="checkbox"/>
-                                            </th>
-                                            <th>Email</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="checkbox-wrapper">
-                                                <input id="" type="checkbox"/>
-                                            </td>
-                                            <td>edgar.amancio@gmail.com</td>
-                                            <td>Edgar</td>
-                                            <td>Amancio</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="checkbox-wrapper">
-                                                <input id="" type="checkbox"/>
-                                            </td>
-                                            <td>edgar.amancio@gmail.com</td>
-                                            <td>Edgar</td>
-                                            <td>Amancio</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="checkbox-wrapper">
-                                                <input id="" type="checkbox"/>
-                                            </td>
-                                            <td>edgar.amancio@gmail.com</td>
-                                            <td>Edgar</td>
-                                            <td>Amancio</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="checkbox-wrapper">
-                                                <input id="" type="checkbox"/>
-                                            </td>
-                                            <td>edgar.amancio@gmail.com</td>
-                                            <td>Edgar</td>
-                                            <td>Amancio</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="collapse" id="collapseguide"><br/>
+                              <div class="well">
+                                <p><b>Creating New Mailing Lists</b></p>
+                                <p>Create new mailing lists through the <a href="#">Dashboard</a></p>
+                                <p>Once a list is created, you can add and remove individual recipients here</p>
+                              </div>
                             </div>
+                        </div><br/>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="checkbox-wrapper">
+                                            <input id="" type="checkbox"/>
+                                        </th>
+                                        <th>Email</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th class="stats">Status</th>
+                                        <th class="action-head">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="checkbox-wrapper">
+                                            <input id="" type="checkbox"/>
+                                        </td>
+                                        <td>edgar.amancio@gmail.com</td>
+                                        <td>Edgar</td>
+                                        <td>Amancio</td>
+                                        <td class="stats"><span class="active"><i class="fa fa-check" aria-hidden="true"></i> Active</span></td>
+                                        <td>
+                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox-wrapper">
+                                            <input id="" type="checkbox"/>
+                                        </td>
+                                        <td>edgar.amancio@gmail.com</td>
+                                        <td>Edgar</td>
+                                        <td>Amancio</td>
+                                        <td class="stats"><span class="inactive"><i class="fa fa-ban" aria-hidden="true"></i> Inactive</span></td>
+                                        <td>
+                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox-wrapper">
+                                            <input id="" type="checkbox"/>
+                                        </td>
+                                        <td>edgar.amancio@gmail.com</td>
+                                        <td>Edgar</td>
+                                        <td>Amancio</td>
+                                        <td class="stats"><span class="removed"><i class="fa fa-trash" aria-hidden="true"></i> Removed</span></td>
+                                        <td>
+                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox-wrapper">
+                                            <input id="" type="checkbox"/>
+                                        </td>
+                                        <td>edgar.amancio@gmail.com</td>
+                                        <td>Edgar</td>
+                                        <td>Amancio</td>
+                                        <td class="stats"><span class="active"><i class="fa fa-check" aria-hidden="true"></i> Active</span></td>
+                                        <td>
+                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <!-- Badge-->
-                            <div class="row">
-                                <div class="col-md-12 badge-panel numphysician">
-                                    <span class="badge" style="width:55px; float: left;">254</span>
-                                    <span class="badgetxt">Selected Physicians</span> 
-                                    <div class="button">Next</div>
-                                </div>
+                        <!-- Badge-->
+                        <div class="row">
+                            <div class="col-md-12 badge-panel numphysician">
+                                <span class="badge" style="width:55px; float: left;">254</span>
+                                <span class="badgetxt">Selected Physicians</span> 
+                                <div class="button">Next</div>
+                                <div class="button btnback">Back</div>
                             </div>
-                          
-                        </fieldset>
+                        </div>
+                      
+                    </fieldset>
 
-                        <!-- Step 3 -->
-                        <fieldset class="section">
-                            <hr>
-                            <div class="form-head">
-                                <h3>Choose Your Template and Mailing List</h3>
-                            </div>
-                            <div class="row preview-wrapper">
-                                <div class="form-group col-md-6">
+                    <!-- Step 3 -->
+                    <fieldset class="section">
+
+                        <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
+                        <div class="row preview-wrapper justify-content-md-center">
+                            <div class="form-group col-md-4">
                                 <label for="exampleInputEmail1"><b>Email address</b></label>
                                 <select class="form-control">
                                     <option>Template 01</option>
@@ -419,144 +436,124 @@
                                     <span><input type="checkbox">&nbsp; Color</span>&nbsp;&nbsp;
                                     <span><input type="checkbox">&nbsp; Double-Sided</span>&nbsp;&nbsp;
                                     <span><input type="checkbox">&nbsp; Blank Page</span><br/><br/>
-                                <p class="btn-preview"><button class="btn btn-primary btn-actions btn-left btn-addmap" type="button"><i class="fa fa-spinner" aria-hidden="true"></i> Generate Preview</button></p>
-                              </div>
+                                <p class="btn-preview"><button class="btn btn-primary btn-actions btn-left btn-addmap" type="button" id="generateprev"><i class="fa fa-spinner" aria-hidden="true"></i> Generate Preview</button></p>
 
-                                <div class="col-md-6">
+                                <div class="terms"><br/><br/>
                                     <p><b>Mail Review</b></p>
-                                    <div class="preview-panel">
-                                        <a href="http://www.docgram.com/previewloader" target="_blank">Open Preview</a>
-                                        <iframe src="http://www.docgram.com/previewloader" height="202"></iframe>
-                                    </div>
                                     <input type="checkbox">&nbsp; I have reviewed the above preview and understand the terms and conditions.
+                                    <div class="button proceedbtn">Proceed Payment Options</div>
                                 </div>
                             </div>
-                            <div class="button">Proceed Payment Options</div>
-                        </fieldset>
-                        <fieldset class="payment-section section ">
-                            <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered summary-table">
-                                            <thead>
-                                                <tr>
-                                                    <th colspan="2">Order Summary</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>First B&W Page</td>
-                                                    <td>1 @ $1.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>+Additional B&W Pages</td>
-                                                    <td>1 @ $0.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cost Per Letter</td>
-                                                    <td>$1.65</td>
-                                                </tr>
-                                                <tr> 
-                                                    <td>x Number of Recipients</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Total Cost </td>
-                                                    <td>$</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div><br/>
-                                    <div class="media">
-                                      <div class="media-left">
-                                        <a href="#">
-                                          <img class="media-object img-responsive" src="https://www.buyrealmarketing.com/assets/images/s5-co-100-guarantee.png" alt="...">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <h6 class="media-heading">100% Money Back Guarantee</h6 >
-                                        We offer a 60-day period for refunds. Learn more about order cancellations and refunds in our Refund Policy page.
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6" >
-                                    <div class="forms clearfix">
-                                        <form>
-                                            <div class="row">
-                                              <div class="col-sm-12">
-                                                <label >Card Number</label>
-                                                <input type="text" class="form-control" placeholder="Credit Card Number">
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-sm-6 pdr">
-                                                <label >Expiration Date</label>
-                                                <input type="text" class="form-control" placeholder="MM/YYYY">
-                                              </div>
-                                              <div class="col-sm-6 pdl">
-                                                <label >CV CODE</label>
-                                                <input type="text" class="form-control" placeholder="CVC">
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-sm-6 pdr">
-                                                <label >First Name</label>
-                                                <input type="text" class="form-control" placeholder="First Name">
-                                              </div>
-                                              <div class="col-sm-6 pdl">
-                                                <label >Last  Name</label>
-                                                <input type="text" class="form-control" placeholder="Last  Name">
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-sm-12">
-                                                <label >Address</label>
-                                                <input type="text" class="form-control" placeholder="Full Address">
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-sm-4 pdr">
-                                                <label >City</label>
-                                                <input type="text" class="form-control" placeholder="City">
-                                              </div>
-                                              <div class="col-sm-4 pdr pdl">
-                                                <label >State</label>
-                                                <input type="text" class="form-control" placeholder="State">
-                                              </div>
-                                              <div class="col-sm-4 pdl">
-                                                <label >Zip Code</label>
-                                                <input type="text" class="form-control" placeholder="Zip Code">
-                                              </div>
-                                            </div>
-                                            <input type="checkbox">&nbsp; Save Payment Method?
-                                            <div class="button">Send DocGram!</div>
-                                        </form>
-                                    </div>
+                        </div>
+                        
+                    </fieldset>
+                    <fieldset class="payment-section section ">
+                        <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered summary-table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Order Summary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>First B&W Page</td>
+                                                <td>1 @ $1.55</td>
+                                            </tr>
+                                            <tr>
+                                                <td>+Additional B&W Pages</td>
+                                                <td>1 @ $0.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cost Per Letter</td>
+                                                <td>$1.65</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>x Number of Recipients</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Cost </td>
+                                                <td>$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><br/>
+                            </div>
+                            <div class="col-md-6" >
+                                <div class="forms clearfix">
+                                    <form>
+                                        <div class="row">
+                                          <div class="col-sm-12">
+                                            <label >Card Number</label>
+                                            <input type="text" class="form-control" placeholder="Credit Card Number">
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-6 pdr">
+                                            <label >Expiration Date</label>
+                                            <input type="text" class="form-control" placeholder="MM/YYYY">
+                                          </div>
+                                          <div class="col-sm-6 pdl">
+                                            <label >CV CODE</label>
+                                            <input type="text" class="form-control" placeholder="CVC">
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-6 pdr">
+                                            <label >First Name</label>
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                          </div>
+                                          <div class="col-sm-6 pdl">
+                                            <label >Last  Name</label>
+                                            <input type="text" class="form-control" placeholder="Last  Name">
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-12">
+                                            <label >Address</label>
+                                            <input type="text" class="form-control" placeholder="Full Address">
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-4 pdr">
+                                            <label >City</label>
+                                            <input type="text" class="form-control" placeholder="City">
+                                          </div>
+                                          <div class="col-sm-4 pdr pdl">
+                                            <label >State</label>
+                                            <input type="text" class="form-control" placeholder="State">
+                                          </div>
+                                          <div class="col-sm-4 pdl">
+                                            <label >Zip Code</label>
+                                            <input type="text" class="form-control" placeholder="Zip Code">
+                                          </div>
+                                        </div>
+                                        <input type="checkbox">&nbsp; Save Payment Method?
+                                        <div class="button">Send DocGram!</div>
+                                    </form>
                                 </div>
                             </div>
-                        </fieldset>
-                        <!-- Thank you -->
-                        <fieldset class="section">
-                            <div class="text-center">
-                              <h1 class="display-3">Thank You!</h1>
-                              <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
-                              <hr>
-                              <p>
-                                Having trouble? <a href="">Contact us</a>
-                              </p>
-                              <p class="lead">
-                                <a class="btn btn-primary btn-sm" href="" role="button">Back to Dashboard</a>
-                              </p>
-                            </div>
-                        </fieldset>
-                      </form>
-                    </div>
+                        </div>
+                    </fieldset>
+                    <!-- Thank you -->
+                    <fieldset class="section">
+                        <div class="text-center">
+                          <h1 class="display-3">Thank You!</h1>
+                          <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
+                          <p>
+                            Having trouble? <a href="">Contact us</a>
+                          </p>
+                          <p class="lead">
+                            <a class="btn btn-primary btn-sm" href="" role="button">Back to Dashboard</a>
+                          </p>
+                        </div>
+                    </fieldset>
                   </div>
-
-
-
-                
+                </div>
             </div><!-- /.container-fluid-->
         </div> <!-- /.content-wrapper-->
 
@@ -571,6 +568,40 @@
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fa fa-angle-up"></i>
         </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="AddPhysician" tabindex="-1" role="dialog" aria-labelledby="AddPhysicianLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <p class="logo-wrapper"><img src="img/logo-v2.png"></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              <div class="modal-body">
+                <h4 class="text-center">Add New Email Address</h4>
+                 <form name="myForm" novalidate>
+                     <div class="form-group">
+                        <label for="email">Please Enter your email address:</label>
+                        <input type="email" class="input-md form-control" id="email" name="email" ng-model="model.email"  required >    
+                     </div>
+
+                     <div class="form-group">
+                         <label class="control-label">Select List</label>
+                         <select class="form-control select-height">
+                             <option hidden>Subscriber</option>
+                             <option>New User</option>
+                         </select>
+                     </div>
+                     <button ng-click="submitForm(myForm)" class="btn btn-primary btn-md">Add this to List</button>
+                 </form>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -612,6 +643,10 @@
                   $(document).find(".form-wrapper .section").first().addClass("is-active");
                   $(document).find(".steps li").first().addClass("is-active");
                 }
+              });
+
+              $("#generateprev").click(function(){
+                $(".terms").toggle(100);
               });
             });
         </script>

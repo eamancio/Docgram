@@ -838,6 +838,8 @@ fieldset{
 
 .clearfix a{
   font-size: 16px;
+  position: relative;
+  top: 8px;
 }
 
 highlight {
@@ -873,11 +875,11 @@ hr{
 
 .numphysician .badge{
   position: relative;
-  top: 24px;
+  top: 35px;
 }
 
 .numphysician .badgetxt{
- top: 28px;
+ top: 38px;
  margin-left: 4px;
  position: absolute;
 }
@@ -1036,4 +1038,76 @@ h6{
 
 .display-3{
   font-size: 34px;
+}
+
+.btnback{
+  margin-right: 15px;
+}
+
+.terms{
+  display: none;
+}
+
+#generateprev:hover, .button:hover, .btn-primary:hover{
+  color: #1580e4 !important;
+  border: 1px solid #1580e4 !important;
+  background: transparent !important;
+}
+
+.proceedbtn{
+  width: 100%;
+}
+
+.heading{
+  margin-top:50px;
+}
+
+.heading:before {
+    left: calc(50% - 60px);
+    content: " ";
+    display: block;
+    background-color: #1c365b ;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: -15px;
+}
+
+.addemail input[type="text"]{
+  width: 100% !important;
+  border-radius: .25rem;
+  height: 37px;
+  margin-top: 14px;
+}
+
+.close{
+      position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.action-ico .fa{
+  font-size: 18px;
+  margin-right:10px;
+}
+
+.action-ico .fa-pencil-square{
+  color: #94c818 !important;
+}
+.action-ico .fa-trash{
+  color: #fa3b00 !important;
+}
+
+.action-head{
+  text-align: center;
+}
+
+.active{
+  color: #94c818;
+}
+.inactive{
+  color: #fa3b00;
+}
+.removed{
+  color: #cdcdcd;
 }
