@@ -740,6 +740,21 @@ fieldset{
   float: right;
   margin-top: 30px;
   border-radius: .25rem;
+  border: 1px solid #1580e4 !important;
+}
+
+.form-wrapper .buttons{
+  background-color: #1580e4;
+  display: inline-block;
+  padding: 8px 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  float: right;
+  margin-top: 30px;
+  border-radius: .25rem;
+  border: 1px solid #1580e4 !important;
 }
 
 .form-wrapper .submit{
@@ -999,8 +1014,15 @@ label{
 
 .forms{
   border: 1px solid #ccc;
-  padding: 10px;
   border-radius: 4px;
+}
+
+.forms form{
+  padding: 10px;
+}
+
+.forms form .button{
+  margin-bottom: 15px;
 }
 
 .forms .button{
@@ -1088,28 +1110,8 @@ h6{
     margin-right: 10px;
 }
 
-.action-ico .fa{
-  font-size: 18px;
-  margin-right:10px;
-}
-
-.action-ico .fa-pencil-square{
-  color: #94c818 !important;
-}
-.action-ico .fa-trash{
-  color: #fa3b00 !important;
-}
-
-.action-head{
-  text-align: center;
-}
-
-.active{
-  color: #94c818;
-}
-.inactive{
-  color: #fa3b00;
-}
-.removed{
-  color: #cdcdcd;
+.paymenthead{
+  background: #1c365b;
+  padding: 10px !important;
+  color: #fff !important;
 }

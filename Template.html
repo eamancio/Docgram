@@ -221,7 +221,7 @@
         </nav>
 
         <div class="content-wrapper">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="wrapper stepwrapper">
                     <h1 class="text-center display-3 heading">3 Simple Steps to Send <b>Doc</b>gram</h1>
                   <ul class="steps">
@@ -296,7 +296,7 @@
                                 <div class="col-md-6">
                                     <a class="text-left" role="button" data-toggle="collapse" href="#collapseguide" aria-expanded="false" aria-controls="collapseguide">Design Guidelines <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <select class="form-control">
                                         <option>Filter By:</option>
                                         <option>Date</option>
@@ -304,17 +304,13 @@
                                         <option>Email</option>
                                     </select>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <select class="form-control text-right">
                                         <option>Select Email List</option>
                                         <option>Email List 01</option>
                                         <option>Email List 02</option>
                                         <option>Email List 03</option>
                                     </select>
-                                </div>
-                                
-                                <div class="col-md-2">
-                                    <button class="btn btn-primary btn-actions btn-right btn-addmap" type="button" data-toggle="modal" data-target="#AddPhysician"><i class="fa fa-map-o" aria-hidden="true"></i> Add A Physician</button>
                                 </div>
                             </div>
                             <div class="collapse" id="collapseguide"><br/>
@@ -335,8 +331,6 @@
                                         <th>Email</th>
                                         <th>First Name</th>
                                         <th>Last Name</th>
-                                        <th class="stats">Status</th>
-                                        <th class="action-head">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -347,11 +341,6 @@
                                         <td>edgar.amancio@gmail.com</td>
                                         <td>Edgar</td>
                                         <td>Amancio</td>
-                                        <td class="stats"><span class="active"><i class="fa fa-check" aria-hidden="true"></i> Active</span></td>
-                                        <td>
-                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
-                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="checkbox-wrapper">
@@ -360,11 +349,6 @@
                                         <td>edgar.amancio@gmail.com</td>
                                         <td>Edgar</td>
                                         <td>Amancio</td>
-                                        <td class="stats"><span class="inactive"><i class="fa fa-ban" aria-hidden="true"></i> Inactive</span></td>
-                                        <td>
-                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
-                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="checkbox-wrapper">
@@ -373,11 +357,6 @@
                                         <td>edgar.amancio@gmail.com</td>
                                         <td>Edgar</td>
                                         <td>Amancio</td>
-                                        <td class="stats"><span class="removed"><i class="fa fa-trash" aria-hidden="true"></i> Removed</span></td>
-                                        <td>
-                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
-                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="checkbox-wrapper">
@@ -386,11 +365,6 @@
                                         <td>edgar.amancio@gmail.com</td>
                                         <td>Edgar</td>
                                         <td>Amancio</td>
-                                        <td class="stats"><span class="active"><i class="fa fa-check" aria-hidden="true"></i> Active</span></td>
-                                        <td>
-                                            <a href="" class="action-ico"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
-                                            <a href="" class="action-ico"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -398,9 +372,10 @@
 
                         <!-- Badge-->
                         <div class="row">
-                            <div class="col-md-12 badge-panel numphysician">
-                                <span class="badge" style="width:55px; float: left;">254</span>
-                                <span class="badgetxt">Selected Physicians</span> 
+                            <div class="col-md-4">
+                                <button class="buttons" type="button" data-toggle="modal" data-target="#AddPhysician"><i class="fa fa-map-o" aria-hidden="true"></i> Add A Physician</button>
+                            </div>
+                            <div class="col-md-8">
                                 <div class="button">Next</div>
                                 <div class="button btnback">Back</div>
                             </div>
@@ -413,7 +388,7 @@
 
                         <p class="logo-wrapper"><img src="img/logo-v2.png"></p><br/><br/>
                         <div class="row preview-wrapper justify-content-md-center">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-8">
                                 <label for="exampleInputEmail1"><b>Email address</b></label>
                                 <select class="form-control">
                                     <option>Template 01</option>
@@ -441,7 +416,10 @@
                                 <div class="terms"><br/><br/>
                                     <p><b>Mail Review</b></p>
                                     <input type="checkbox">&nbsp; I have reviewed the above preview and understand the terms and conditions.
-                                    <div class="button proceedbtn">Proceed Payment Options</div>
+                                    <div>
+                                        <div class="col-md-7 button proceedbtn">Proceed Payment Options</div>
+                                        <div class="col-md-6 button proceedbtn" style="max-width: 100px; margin-right: 15px; float: left;">Back</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -485,19 +463,22 @@
                             </div>
                             <div class="col-md-6" >
                                 <div class="forms clearfix">
+                                    <p class="text-center paymenthead">Your Billing Information</p>
                                     <form>
                                         <div class="row">
-                                          <div class="col-sm-6 pdr">
-                                            <label >Card Number</label>
-                                            <input type="text" class="form-control" placeholder="Credit Card Number">
-                                          </div>
-                                          <div class="col-sm-6 pdl">
-                                            <label >Save Cards</label>
+                                          <div class="col-sm-12">
+                                            <label >Saved Cards</label>
                                             <select class="form-control">
                                                 <option>5105105105105100</option>
                                                 <option>4111111111111111</option>
                                                 <option>4012888888881881</option>
                                             </select>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-12">
+                                            <label >Card Number</label>
+                                            <input type="text" class="form-control" placeholder="Credit Card Number">
                                           </div>
                                         </div>
                                         <div class="row">
